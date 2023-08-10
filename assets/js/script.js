@@ -9,3 +9,19 @@ emailInput.addEventListener("keyup", function validateEmail() {
    emailMessageError.innerHTML = "";
    return true;
 });
+
+// Menu Responsive
+
+var menuUl = document.querySelector(".menu-nav-bar ul");
+var menuTrigger = document.querySelector(".menu-trigger");
+
+menuTrigger.addEventListener("click", function openMenu() {
+   if (menuUl.classList.contains('open')) {
+      menuUl.classList.remove('open');
+   } else {
+      menuUl.classList.add('open');
+   }
+})
+
+
+
